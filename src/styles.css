@@ -1,0 +1,28 @@
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+p, a, li {
+    font-size: 12px !important;
+}
+
+@media(min-width: 768px) {
+    p, a, li {
+        font-size: 14px !important;
+    }
+}
+
+@media(min-width: 991px) {
+    p, a, li {
+        font-size: 16px !important;
+    }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.item-submenu {
+    position: absolute;
+}
