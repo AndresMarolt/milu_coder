@@ -1,22 +1,10 @@
 
 body {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Calibri', sans-serif !important;
 }
 
-p, a, li {
+p, a, li, input, button, label {
     font-size: 12px !important;
-}
-
-@media(min-width: 768px) {
-    p, a, li {
-        font-size: 14px !important;
-    }
-}
-
-@media(min-width: 991px) {
-    p, a, li {
-        font-size: 16px !important;
-    }
 }
 
 .dropdown {
@@ -25,4 +13,32 @@ p, a, li {
 
 .item-submenu {
     position: absolute;
+}
+
+.banner-img {
+    width: 50%;
+    height: 450px;
+}
+
+.whatsapp-icon {
+    width: 10%;
+    position: fixed;
+    left: 85%;
+    top: 85%;
+}
+
+@media(min-width: 768px) {
+    p, a, li, input, button, label {
+        font-size: 14px !important;
+    }
+}
+
+@media(min-width: 991px) {
+    p, a, li, input, button, label {
+        font-size: 16px !important;
+    }
+
+    .whatsapp-icon {
+        width: 5%;
+    }
 }
