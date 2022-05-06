@@ -41,4 +41,8 @@ p, a, li, input, button, label {
     .whatsapp-icon {
         width: 5%;
     }
+    
+    .img-producto {
+        height: 150px;
+    }
 }
