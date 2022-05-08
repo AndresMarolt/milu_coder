@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="src/styles.css">
-    <title>Milú - Ropa para bebés y niños</title>
+    <title>Milú - Nuestra Historia</title>
 </head>
 
 <body>
     <header>
         <div class=" d-flex flex-column gap-2 w-100">
-            <a href="/" style="width: 30%" class="mx-auto">
-                <svg class="w-100" height="157" viewBox="0 0 221 157" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a href="/" style="width: 15%" class="mx-auto">
+                <svg width="221" height="157" viewBox="0 0 221 157" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="221" height="157" fill="url(#pattern0)"/>
                     <defs>
                         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -24,12 +29,10 @@
                 </svg>
             </a>
 
-                
-
-            <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center gap-2 gap-md-0 py-2 list-unstyled fw-bold" style="background-color: #FEEBCD;">
+            <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center gap-md-0 gap-2 py-2 list-unstyled fw-bold" style="background-color: #FEEBCD;">
                 <li><a class="text-dark text-decoration-none" href="/">INICIO</a></li>
-                <li><a class="text-dark text-decoration-none" href="historia.html">HISTORIA</a></li>
-                
+                <li><a class="text-dark text-decoration-none" href="#">HISTORIA</a></li>
+
                 <div class="btn-group dropdown">
                     <button class="btn dropdown-toggle link fw-bold" type="button" id="dropdownMenuProd" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                         PRODUCTOS
@@ -48,7 +51,7 @@
                         </li>
                         <li>
                             <div class="btn-group dropdown">
-                                <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                     NIÑOS
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
@@ -59,36 +62,53 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- <div class="dropdown">
+                    <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownProductos" data-bs-toggle="dropdown" aria-expanded="false">
+                      PRODUCTOS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownProductos">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownBebes" data-bs-toggle="dropdown" aria-expanded="false">
+                                BEBÉS
+                            </button>
+                            <ul class="dropdown-menu dropdown-submenu" aria-labelledby="dropdownBebes">
+                                <li><a class="dropdown-item" href="#">BEBÉ</a></li>
+                                <li><a class="dropdown-item" href="#">BEBA</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownNiños" data-bs-toggle="dropdown" aria-expanded="false">
+                                NIÑOS
+                            </button>
+                            <ul class="dropdown-menu dropdown-submenu" aria-labelledby="dropdownNiños">
+                                <li><a class="dropdown-item" href="#">NIÑO</a></li>
+                                <li><a class="dropdown-item" href="#">NIÑA</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div> -->
                 
-                  <li><a class="text-dark text-decoration-none" href="#">CONTACTO</a></li>
+                <li><a class="text-dark text-decoration-none" href="#">CONTACTO</a></li>
             </ul>
         </div>
     </header>
 
-    <main>
-        <div class="d-flex w-100">
-            <img src="src/img/local_cartel.jpeg" alt="banner" class="banner-img">
-            <img src="src/img/foto_historia.jpeg" alt="banner" class="banner-img">
-        </div>
+    <main class="container my-5">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5 w-100 mx-auto">
+            <img src="src/img/foto_historia.jpeg" alt="img" class="w-50">
 
-        <div class="container">
-            <a href="#">
-                <svg width="58" height="59" viewBox="0 0 58 59" fill="none" class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_622_677)">
-                    <path d="M15.3298 50.5311L16.278 51.0079C20.2293 53.3914 24.6543 54.5037 29.0795 54.5037C42.987 54.5037 54.3659 43.0627 54.3659 29.0793C54.3659 22.4054 51.6791 15.8904 46.938 11.1232C42.1968 6.35606 35.875 3.65482 29.0795 3.65482C15.1719 3.65482 3.79283 15.0958 3.95097 29.2383C3.95097 34.0052 5.37333 38.6136 7.74385 42.5859L8.37596 43.5395L5.84752 52.9148L15.3298 50.5311Z" fill="#00E676"/>
-                    <path d="M49.6247 8.58074C44.2513 3.01925 36.8234 0 29.2374 0C13.1175 0 0.158141 13.1889 0.316055 29.238C0.316055 34.323 1.73841 39.2491 4.10916 43.6983L0 58.7941L15.3299 54.8215C19.597 57.2052 24.338 58.3175 29.0795 58.3175C45.0415 58.3175 58.0009 45.1284 58.0009 29.0795C58.0009 21.2931 54.998 13.9835 49.6249 8.58074H49.6247ZM29.2374 53.3916C24.9704 53.3916 20.7033 52.2795 17.0683 50.0548L16.1201 49.578L6.95388 51.9615L9.32441 42.9042L8.6923 41.9506C1.73841 30.6686 5.05733 15.7314 16.4362 8.73952C27.8151 1.7479 42.5129 5.08493 49.4668 16.5259C56.4204 27.9669 53.1015 42.7449 41.7228 49.7368C38.0877 52.1202 33.6627 53.3914 29.2374 53.3914V53.3916ZM43.145 35.7535L41.4066 34.959C41.4066 34.959 38.8781 33.8466 37.2976 33.0521C37.1395 33.0521 36.9816 32.8931 36.8234 32.8931C36.3492 32.8931 36.0332 33.0521 35.7171 33.2111C35.7171 33.2111 35.5592 33.3699 33.3466 35.9123C33.1885 36.2301 32.8724 36.3891 32.5564 36.3891H32.3982C32.2403 36.3891 31.9242 36.2301 31.7661 36.0713L30.9758 35.7535C29.2374 34.959 27.6572 34.0054 26.3927 32.7343C26.0767 32.4165 25.6025 32.0987 25.2864 31.781C24.1801 30.6686 23.0738 29.3973 22.2838 27.9671L22.1256 27.6494C21.9677 27.4904 21.9677 27.3316 21.8096 27.0138C21.8096 26.696 21.8096 26.3782 21.9677 26.2192C21.9677 26.2192 22.5998 25.4247 23.0738 24.9481C23.3901 24.6301 23.548 24.1536 23.8641 23.8358C24.1801 23.359 24.3382 22.7234 24.1801 22.2466C24.0222 21.4521 22.1256 17.1617 21.6517 16.2084C21.3354 15.7316 21.0196 15.5728 20.5454 15.4138H18.807C18.4907 15.4138 18.1748 15.5728 17.8586 15.5728L17.7004 15.7316C17.3844 15.8906 17.0683 16.2084 16.7523 16.3671C16.4362 16.6852 16.2781 17.0027 15.962 17.3207C14.8557 18.7508 14.2236 20.4987 14.2236 22.2466C14.2236 23.5178 14.5396 24.7891 15.0138 25.9015L15.172 26.3782C16.5943 29.3973 18.4907 32.0987 21.0196 34.4822L21.6517 35.1178C22.1256 35.5945 22.5998 35.9123 22.9159 36.3889C26.2348 39.2494 30.0277 41.315 34.2948 42.4274C34.769 42.5862 35.4011 42.5862 35.8753 42.7452H37.4555C38.2458 42.7452 39.194 42.4274 39.8263 42.1096C40.3003 41.7918 40.6163 41.7918 40.9324 41.474L41.2486 41.156C41.5647 40.8383 41.8808 40.6795 42.1968 40.3617C42.5129 40.0439 42.8289 39.7261 42.9871 39.4081C43.3031 38.7726 43.461 37.978 43.6192 37.1837V36.0713C43.6192 36.0713 43.461 35.9123 43.145 35.7535Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_622_677">
-                    <rect width="58" height="59" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg>
-            </a>
+            <div>
+                <p>Milú es un emprendimiento de indumentaria de bebés y niños , que nació en la ciudad de  Paraná , provincia de Entre Ríos en junio de 2018. 
+                    Todo comenzó en un pequeño taller en la casa de la infancia de Flor , quien es Diseñadora de indumentaria y textil y junto con Sole su cuñada empezaron a crear una limitada cantidad de prendas para vender por redes sociales. Como vieron que gustaba lo que hacían , unos 6 meses después decidieron reformar una parte de la casa para convertirla en negocio y dar el paso a la venta al público.
+                    Sole por razones personales tuvo que irse a vivir a otra provincia. Hoy en día es  Flor quien sigue adelante con la marca y continúa en proceso de crecimiento, pensando en mejorar para brindar lo mejor a cada cliente y llegar a más lugares.</p>
+            </div>
+
         </div>
-        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
