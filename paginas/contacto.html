@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/styles.css">
+    <title>Milú - Ropa para bebés y niños</title>
+</head>
+
+<body>
+    <header>
+        <div class=" d-flex flex-column gap-2 w-100">
+            <a href="/" style="width: 15%" class="mx-auto"><img class="w-100" src="../src/img/logo.jpg" alt="milu_logo"></a>
+            <nav>
+                <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center gap-2 gap-md-0 py-2 list-unstyled fw-bold">
+                    <li><a class="text-dark text-decoration-none" href="../index.html">INICIO</a></li>
+                    <li><a class="text-dark text-decoration-none" href="historia.html">HISTORIA</a></li>
+                    
+                    <div class="btn-group dropdown">
+                        <button class="btn dropdown-toggle link fw-bold" type="button" id="dropdownMenuProd" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            PRODUCTOS
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuProd">
+                            <li>
+                                <div class="btn-group dropdown">
+                                    <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        BEBÉS
+                                    </button>
+                                    <ul class="dropdown-menu item-submenu" aria-labelledby="dropdownMenuButton2">
+                                        <li><a href="" class="dropdown-item ">BEBÉ</a></li>
+                                        <li><a href="" class="dropdown-item ">BEBA</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-group dropdown">
+                                    <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                        NIÑOS
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <li><a href="" class="dropdown-item ">NIÑO</a></li>
+                                        <li><a href="" class="dropdown-item ">NIÑA</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                      <li><a class="text-dark text-decoration-none" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>      
+        </div>
+    </header>
+    <main class="container">
+        <div class="parentContact">
+            <div class="div1Contact">
+                <ul>
+                    <li><img src="../src/icons/clarity_phone-handset-solid.svg" alt="" height="30">+54 343 461-9017</li>
+                    <li><img src="../src/icons/Correo.svg" alt="" height="30"> milu.pna@gmail.com</li>
+                    <li><img src="../src/icons/Ubicacion.svg" alt="" height="30"> Radio cadena 10fm 88.5, Angel Donado 1063, Paraná, Entre Ríos, Argentina.</li>
+                    <li>Lunes a Viernes de 09:00 a 18:00 <br>
+                        Sábado de 09:00 a 13:00</li>
+                </ul> 
+                <!-- <h3>Podés encontrarnos acá:</h3> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.7078398862827!2d-60.50733088514745!3d-31.75117471970153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2f84b31c1%3A0x7763c85bc2a15122!2sradio%20cadena%2010%20fm%2088.5!5e0!3m2!1sen!2sar!4v1651601366018!5m2!1sen!2sar" width="300" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="div2Contact"> 
+                <ul>
+                    <li><a href=""><img src="../src/icons/akar-icons_instagram-fill.svg" alt="" height="30"></a>Siguenos en Instagram</li>
+                    <li><a href=""><img src="../src/icons/brandico_facebook.svg" alt="" height="30"></a>Siguenos en Facebook</li>
+                </ul>
+            </div>
+            <div class="div3Contact">
+                <section class="row row-cols-12 mb-4">
+                    <form class="row">
+                        <div class="col">
+                            <div class="col-lg-12 mt-2">
+                                <label for="inputName" class="form-label">NOMBRE</label>
+                              <input type="text" name="name" class="form-control" placeholder="Tu nombre" aria-label="First name" id="inputName" required maxlength="25">
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <label for="inputEmail" class="form-label">EMAIL</label>
+                                <input type="email" name="email" class="form-control" placeholder="Tu email" id="inputEmail" required maxlength="25">
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <label for="inputCel" class="form-label">CELULAR (OPCIONAL)</label>
+                                <input type="text" name="cel" class="form-control" placeholder="Tu celular" id="inputCel" maxlength="25">
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <label for="textArea" class="form-label">MENSAJE (OPCIONAL)</label>
+                                <textarea name="comments" class="form-control" id="textArea" rows="5" cols="" placeholder="En qué podemos ayudarte?" maxlength="500"></textarea>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <button type="submit" class="btn btn-secondary">Enviar</button>
+                            </div>
+                        </div>
+                      </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>        
+        <div class="parent container">
+            <div class="div1"> 
+                <h5 class="mb-4 mt-3">NAVEGACIÓN</h5>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="div2"> 
+                <h5 class="mb-4 mt-3">CONTACTANOS</h5>
+                <ul>
+                    <li><img src="../src/icons/clarity_phone-handset-solid.svg" alt="" height="30"> +54 343 461-9017</li>
+                    <li><img src="../src/icons/@.svg" alt="" height="30"> milu.pna@gmail.com</li>
+                    <li><img src="../src/icons/Ubicacion.svg" alt="" height="30"> Radio cadena 10fm 88.5, Angel Donado 1063, Paraná, Entre Ríos, Argentina</li>
+                    <!-- <li>Lunes a Viernes de 09:00 a 18:00 <br>
+                        Sábado de 09:00 a 13:00</li> -->
+                </ul>
+            </div>
+            <div class="div3"> 
+                <h5 class="mb-4 mt-3">REDES SOCIALES</h5>
+                <ul class="lista_ico">
+                    <li><a href="#"><img src="../src/icons/Indtagram con fondo.svg" alt="Instagram icon" height="50"></a></li>
+                    <li><a href="#"><img src="../src/icons/entypo-social_facebook-with-circle.svg" alt="Facebook icon" height="50"></a></li>
+                </ul>
+                <h6 class="mb-4 mt-3">¡RECIBI NOVEDADES!</h6>
+                <div class="novs">
+                    <input type="text"><a href=""><img src="../src/icons/enviar.svg" alt=""></a>
+                </div>
+            </div>
+            </div>
+            <hr>
+        <div class="derechos">
+            <p>&copy; 2021 All Rights Reserved &reg; Milú.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
