@@ -7,18 +7,6 @@ p, a, li, input, button, label {
     font-size: 12px !important;
 }
 
-@media(min-width: 768px) {
-    p, a, li, input, button, label {
-        font-size: 14px !important;
-    }
-}
-
-@media(min-width: 991px) {
-    p, a, li, input, button, label {
-        font-size: 16px !important;
-    }
-}
-
 .dropdown {
     position: relative;
 }
@@ -33,8 +21,45 @@ p, a, li, input, button, label {
 }
 
 .whatsapp-icon {
+    width: 10%;
+    position: fixed;
+    left: 85%;
+    top: 85%;
+}
+
+@media(min-width: 768px) {
+    p, a, li, input, button, label {
+        font-size: 14px !important;
+    }
+}
+
+@media(min-width: 991px) {
+    p, a, li, input, button, label {
+        font-size: 16px !important;
+    }
+
+<<<<<<< HEAD
+.item-submenu {
+    position: absolute;
+}
+
+.banner-img {
+    width: 50%;
+    height: 450px;
+}
+
+.whatsapp-icon {
     width: 5%;
     position: fixed;
     left: 90%;
     top: 80%;
+=======
+    .whatsapp-icon {
+        width: 5%;
+    }
+    
+    .img-producto {
+        height: 150px;
+    }
+>>>>>>> c3d4057db311f76ffe51ab9cee601b74071609a4
 }

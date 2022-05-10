@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/styles.css">
+    <title>Milú - Nuestra Historia</title>
+</head>
+
+<body>
+    <header>
+        <div class=" d-flex flex-column gap-2 w-100">
+            <a href="/" style="width: 15%" class="mx-auto">
+                <svg width="221" height="157" viewBox="0 0 221 157" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="221" height="157" fill="url(#pattern0)"/>
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_425_244" transform="translate(0 -0.000930721) scale(0.00198807 0.0027985)"/>
+                        </pattern>
+                        <image id="image0_425_244" width="503" height="358" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                </svg>
+            </a>
+
+            <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center gap-md-0 gap-2 py-2 list-unstyled fw-bold" style="background-color: #FEEBCD;">
+                <li><a class="text-dark text-decoration-none" href="/">INICIO</a></li>
+                <li><a class="text-dark text-decoration-none" href="#">HISTORIA</a></li>
+
+                <div class="btn-group dropdown">
+                    <button class="btn dropdown-toggle link fw-bold" type="button" id="dropdownMenuProd" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        PRODUCTOS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuProd">
+                        <li>
+                            <div class="btn-group dropdown">
+                                <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    BEBÉS
+                                </button>
+                                <ul class="dropdown-menu item-submenu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a href="" class="dropdown-item ">BEBÉ</a></li>
+                                    <li><a href="" class="dropdown-item ">BEBA</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group dropdown">
+                                <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    NIÑOS
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a href="" class="dropdown-item ">NIÑO</a></li>
+                                    <li><a href="" class="dropdown-item ">NIÑA</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <li><a class="text-dark text-decoration-none" href="#">CONTACTO</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+        <a href="#">
+            <svg width="58" height="59" viewBox="0 0 58 59" fill="none" class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_622_677)">
+                <path d="M15.3298 50.5311L16.278 51.0079C20.2293 53.3914 24.6543 54.5037 29.0795 54.5037C42.987 54.5037 54.3659 43.0627 54.3659 29.0793C54.3659 22.4054 51.6791 15.8904 46.938 11.1232C42.1968 6.35606 35.875 3.65482 29.0795 3.65482C15.1719 3.65482 3.79283 15.0958 3.95097 29.2383C3.95097 34.0052 5.37333 38.6136 7.74385 42.5859L8.37596 43.5395L5.84752 52.9148L15.3298 50.5311Z" fill="#00E676"/>
+                <path d="M49.6247 8.58074C44.2513 3.01925 36.8234 0 29.2374 0C13.1175 0 0.158141 13.1889 0.316055 29.238C0.316055 34.323 1.73841 39.2491 4.10916 43.6983L0 58.7941L15.3299 54.8215C19.597 57.2052 24.338 58.3175 29.0795 58.3175C45.0415 58.3175 58.0009 45.1284 58.0009 29.0795C58.0009 21.2931 54.998 13.9835 49.6249 8.58074H49.6247ZM29.2374 53.3916C24.9704 53.3916 20.7033 52.2795 17.0683 50.0548L16.1201 49.578L6.95388 51.9615L9.32441 42.9042L8.6923 41.9506C1.73841 30.6686 5.05733 15.7314 16.4362 8.73952C27.8151 1.7479 42.5129 5.08493 49.4668 16.5259C56.4204 27.9669 53.1015 42.7449 41.7228 49.7368C38.0877 52.1202 33.6627 53.3914 29.2374 53.3914V53.3916ZM43.145 35.7535L41.4066 34.959C41.4066 34.959 38.8781 33.8466 37.2976 33.0521C37.1395 33.0521 36.9816 32.8931 36.8234 32.8931C36.3492 32.8931 36.0332 33.0521 35.7171 33.2111C35.7171 33.2111 35.5592 33.3699 33.3466 35.9123C33.1885 36.2301 32.8724 36.3891 32.5564 36.3891H32.3982C32.2403 36.3891 31.9242 36.2301 31.7661 36.0713L30.9758 35.7535C29.2374 34.959 27.6572 34.0054 26.3927 32.7343C26.0767 32.4165 25.6025 32.0987 25.2864 31.781C24.1801 30.6686 23.0738 29.3973 22.2838 27.9671L22.1256 27.6494C21.9677 27.4904 21.9677 27.3316 21.8096 27.0138C21.8096 26.696 21.8096 26.3782 21.9677 26.2192C21.9677 26.2192 22.5998 25.4247 23.0738 24.9481C23.3901 24.6301 23.548 24.1536 23.8641 23.8358C24.1801 23.359 24.3382 22.7234 24.1801 22.2466C24.0222 21.4521 22.1256 17.1617 21.6517 16.2084C21.3354 15.7316 21.0196 15.5728 20.5454 15.4138H18.807C18.4907 15.4138 18.1748 15.5728 17.8586 15.5728L17.7004 15.7316C17.3844 15.8906 17.0683 16.2084 16.7523 16.3671C16.4362 16.6852 16.2781 17.0027 15.962 17.3207C14.8557 18.7508 14.2236 20.4987 14.2236 22.2466C14.2236 23.5178 14.5396 24.7891 15.0138 25.9015L15.172 26.3782C16.5943 29.3973 18.4907 32.0987 21.0196 34.4822L21.6517 35.1178C22.1256 35.5945 22.5998 35.9123 22.9159 36.3889C26.2348 39.2494 30.0277 41.315 34.2948 42.4274C34.769 42.5862 35.4011 42.5862 35.8753 42.7452H37.4555C38.2458 42.7452 39.194 42.4274 39.8263 42.1096C40.3003 41.7918 40.6163 41.7918 40.9324 41.474L41.2486 41.156C41.5647 40.8383 41.8808 40.6795 42.1968 40.3617C42.5129 40.0439 42.8289 39.7261 42.9871 39.4081C43.3031 38.7726 43.461 37.978 43.6192 37.1837V36.0713C43.6192 36.0713 43.461 35.9123 43.145 35.7535Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_622_677">
+                <rect width="58" height="59" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+        </a>
+        
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5 w-100 mx-auto">
+            <img src="../src/img/foto_historia.jpeg" alt="img" class="w-50">
+
+            <div>
+                <p>Milú es un emprendimiento de indumentaria de bebés y niños , que nació en la ciudad de  Paraná , provincia de Entre Ríos en junio de 2018. 
+                    Todo comenzó en un pequeño taller en la casa de la infancia de Flor , quien es Diseñadora de indumentaria y textil y junto con Sole su cuñada empezaron a crear una limitada cantidad de prendas para vender por redes sociales. Como vieron que gustaba lo que hacían , unos 6 meses después decidieron reformar una parte de la casa para convertirla en negocio y dar el paso a la venta al público.
+                    Sole por razones personales tuvo que irse a vivir a otra provincia. Hoy en día es  Flor quien sigue adelante con la marca y continúa en proceso de crecimiento, pensando en mejorar para brindar lo mejor a cada cliente y llegar a más lugares.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
