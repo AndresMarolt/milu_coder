@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Calibri', sans-serif !important;
 }
@@ -38,22 +37,6 @@ p, a, li, input, button, label {
         font-size: 16px !important;
     }
 
-<<<<<<< HEAD
-.item-submenu {
-    position: absolute;
-}
-
-.banner-img {
-    width: 50%;
-    height: 450px;
-}
-
-.whatsapp-icon {
-    width: 5%;
-    position: fixed;
-    left: 90%;
-    top: 80%;
-=======
     .whatsapp-icon {
         width: 5%;
     }
@@ -61,5 +44,224 @@ p, a, li, input, button, label {
     .img-producto {
         height: 150px;
     }
->>>>>>> c3d4057db311f76ffe51ab9cee601b74071609a4
+}
+
+/*--------------------------------------------*/
+
+nav{
+    background-color: #FEEBCD;
+    margin-bottom: 30px;
+}
+
+.parentContact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat 1fr;
+    grid-column-gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.div1Contact { 
+    grid-area: 1 / 1 / 2 / 2;     
+}
+
+.div1Contact ul li {
+    list-style: none;
+    line-height: 2.5em;
+}
+
+.div1Contact iframe{
+    margin-left: 30px;
+}
+
+.div2Contact { 
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div2Contact ul li{
+    list-style: none;
+    line-height: 2.5em;
+}
+
+.div2Contact img{
+    padding-right: 30px;
+}
+
+.div3Contact { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+
+.div3Contact button{
+    background-color: #FEEBCD !important;
+    border: #FEEBCD;
+    color: #000;
+}
+
+.div3Contact button:hover{
+    background-color: #F9E0BA !important;
+    color: #000;
+}
+
+footer {
+    background-color: #FEEBCD;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.lista_ico {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+  
+.derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5, h6 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.div1 ul li {
+    list-style: none;
+    line-height: 2em;
+}
+
+.div1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.div1 ul li a:hover{
+    text-decoration: underline;
+}
+
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.div2 ul li {
+    list-style: none;
+    line-height: 3em;
+}
+
+.div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+
+.novs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.icono-enviar {
+    color: white;
+    background-color: black;
+    padding: .3rem;
+}
+
+/* ---------------------- MEDIA QUERIES ---------------------- */
+
+/* ---------------------- SMARTPHONES ------------------------ */
+
+@media (min-width: 360px) and (max-width: 480px){
+    .parentContact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .div1Contact{
+        order: 1;
+        padding-bottom: 50px;
+    }
+    .div2Contact{
+        order: 1;
+    }
+    .div3Contact{
+        margin-bottom: 30px;
+    }
+    .parent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .div1 h5{
+        margin-left: 30px;
+    }
+    .div2{
+        order: 1;
+    }
+    .div2 h5{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 30px;
+    }
+    .div3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .lista_ico{
+        padding-right: 30px;
+    }
+    .lista_ico img{
+        height: 30px;
+    }
+    .novs input{
+        margin-left: 50px;
+        width: 130px;
+    }
+    h5, h6{
+        font-size: 15px;
+    }
+}
+
+/* ---------------------- TABLETS & IPADS ---------------------- */
+
+@media (min-width: 768px) and (max-width: 990px){
+    .parentContact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .div1Contact{
+        order: 1;
+        padding-bottom: 50px;
+    }
+    .div2Contact{
+        order: 1;
+    }
+    .div3Contact{
+        margin-bottom: 30px;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+    }
+
 }
