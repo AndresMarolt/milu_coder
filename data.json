@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "categoria": "beba",
-        "tipo": "calza",
+        "categoria": "BEBA",
+        "tipo": "CALZA",
         "nombre": "Calza de lycra y algodón estampada",
         "imagen": "../src/img/productos/bebes/beba/calza-beba.png",
         "precio": 1400,
@@ -11,8 +11,8 @@
         "color": ["estampado", "azul"]
     },{
         "id": 2,
-        "categoria": "beba",
-        "tipo": "pantalon",
+        "categoria": "BEBA",
+        "tipo": "PANTALÓN",
         "nombre": "Pantalón de rústico (rosa chicle)",
         "imagen": "../src/img/productos/bebes/beba/pantalon-beba.png",
         "precio": 1600,
@@ -21,8 +21,8 @@
         "color": "rosa"
     },{
         "id": 3,
-        "categoria": "beba",
-        "tipo": "conjunto",
+        "categoria": "BEBA",
+        "tipo": "CONJUNTOS",
         "nombre": "Conjunto body estampado y ranita lisa",
         "imagen": "../src/img/productos/bebes/beba/conjunto.png",
         "precio": 2250,
@@ -32,7 +32,7 @@
     },{
         "id": 4,
         "categoria": "BEBÉ",
-        "tipo": "pantalon",
+        "tipo": "PANTALÓN",
         "nombre": "Pantalón de rústico simil jeans",
         "imagen": "../src/img/productos/bebes/bebe/pantalon-rustico.png",
         "precio": 1600,
@@ -42,7 +42,7 @@
     },{
         "id": 5,
         "categoria": "BEBÉ",
-        "tipo": "pantalon", 
+        "tipo": "PANTALÓN", 
         "nombre": "Pantalón de frisa de algodón azul marino",
         "imagen": "../src/img/productos/bebes/bebe/pantalon-frisa-azul-marino.png",
         "precio": 1650,
@@ -52,7 +52,7 @@
     },{
         "id": 6,
         "categoria": "BEBÉ",
-        "tipo": "pantalon", 
+        "tipo": "PANTALÓN", 
         "nombre": "Pantalón de frisa de algodón lavanda",
         "imagen": "../src/img/productos/bebes/bebe/pantalon-frisa-lavanda.png",
         "precio": 1650,
@@ -62,8 +62,8 @@
     },{
         "id": 7,
         "categoria": "BEBÉ", 
+        "tipo": "CONJUNTOS",
         "nombre": "Conjunto body estampado y ranita lisa",
-        "tipo": "conjunto",
         "imagen": "../src/img/productos/bebes/bebe/conjunto-body-estampado-ranita-lisa.png",
         "precio": 2250,
         "talles": ["s", "m", "l"],
@@ -72,7 +72,7 @@
     },{
         "id": 8,
         "categoria": "BEBÉ",
-        "tipo": "ranita",
+        "tipo": "RANITA",
         "nombre": "Ranita interlock blanca",
         "imagen": "../src/img/productos/bebes/bebe/ranita-interlock-blanca.png",
         "precio": 850,
@@ -81,8 +81,8 @@
         "color": "blanco"
     },{
         "id": 9,
-        "categoria": "nena",
-        "tipo": "calza",
+        "categoria": "NIÑA",
+        "tipo": "CALZA",
         "nombre": "Calza estampada de lycra y algodón",
         "imagen": "../src/img/productos/niños/niña/calza-nena-lycra-algodon-estampada.png",
         "precio": 2400,
@@ -91,8 +91,8 @@
         "color": "estampado"
     },{
         "id": 10,
-        "categoria": "nena",
-        "tipo": "calza",
+        "categoria": "NIÑA",
+        "tipo": "CALZA",
         "nombre": "Calza rústico de lycra y algodón",
         "imagen": "../src/img/productos/niños/niña/calza-nena-rustico-algodon-gris-topo.png",
         "precio": 2000,

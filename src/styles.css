@@ -6,14 +6,6 @@ p, a, li, input, button, label {
     font-size: 12px !important;
 }
 
-.dropdown {
-    position: relative;
-}
-
-.item-submenu {
-    position: absolute;
-}
-
 .banner-img {
     width: 50%;
     height: 200px;
@@ -88,6 +80,39 @@ nav{
     margin-bottom: 46px;
 }
 
+body {
+    font-family: 'Roboto', sans-serif !important;
+    height: 100%;
+}
+
+main {
+    /* height: 100vh; */
+}
+
+p, a, li {
+    font-size: 12px !important;
+}
+
+@media(min-width: 768px) {
+    p, a, li {
+        font-size: 14px !important;
+    }
+}
+
+@media(min-width: 991px) {
+    p, a, li {
+        font-size: 16px !important;
+    }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.item-submenu {
+    position: absolute;
+}
+
 .parentContact{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -120,7 +145,7 @@ nav{
 }
 
 .div2Contact img{
-    width: 20%;
+    padding-right: 30px;
 }
 
 .div3Contact { 
@@ -140,6 +165,7 @@ nav{
 
 footer {
     background-color: #FEEBCD;
+    position: relative;
     bottom: 0;
     right: 0;
     left: 0;
@@ -211,11 +237,108 @@ h5, h6 {
     flex-wrap: wrap;
 }
 
-.icono-enviar {
-    color: white;
-    background-color: black;
-    padding: .3rem;
+.menu{
+    display: flex;
+    justify-content:space-evenly;
 }
+
+.menu > li {
+    float: left;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 110px;
+    background-color: #FEEBCD;
+}
+
+.menu li:hover > ul { 
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li ul li {
+    position: relative;
+}
+
+.menu li ul li:hover {
+    background-color: #F9E0BA;
+}
+
+.menu li ul li ul {
+    left: 100px;
+    top: 0px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a, nav ul li p{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    display: block;
+}
+
+.fa-solid{
+    padding-left: 30px;
+}
+a:hover{
+    color: #FF9c00;
+} 
+
+header {
+    width: 100%;
+}
+
+nav{
+    background-color: #FEEBCD;
+    width: 100%;
+}
+
+nav ul.menu {
+    margin-right: 20px;
+    margin-top: 85px;
+}
+
+nav ul.menu li {
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+nav ul.menu li a, nav ul.menu li p{
+    color: #000;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 150px;
+}
+
+nav ul.menu li a:hover, nav ul.menu li p:hover{
+    color: #FF9c00;
+}
+
+li a.active,
+li a:hover {
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 40px;
+    float: left;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    padding-left: 20px;
+}
+
+#check {
+    display: none;
+}
+ 
 
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
@@ -262,7 +385,7 @@ h5, h6 {
     .lista_ico{
         padding-right: 30px;
     }
-    .lista_ico img, .lista_ico svg{
+    .lista_ico img{
         height: 30px;
     }
     .novs input{
@@ -299,4 +422,67 @@ h5, h6 {
         grid-column-gap: 20px;
     }
 
+}
+
+@media (max-width: 952px) {
+
+
+    nav ul.menu li a {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        margin-top: 7px;
+        margin-left: 0px;
+    }
+    ul.menu, menu {
+        position: fixed;
+        background: #fff;
+        left: 100%;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul.menu li {
+        display: block;
+        padding: auto;
+    }
+
+    nav ul.menu li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: #000;
+
+    }
+
+    #check:checked~ul.menu {
+        left: 0;
+        background-color: #fff;
+        backdrop-filter: blur(34px) brightness(115%);
+        opacity: 0.88;
+        height: 50%;
+    }
+    header{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    header svg{
+        height: 60%;
+        display: flex;
+    }
+
+    nav{
+        background-color: #fff;
+        order: -1;
+    }
 }
