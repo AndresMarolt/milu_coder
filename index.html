@@ -9,52 +9,160 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Milú - Ropa para bebés y niños</title>
 </head>
 <body>
     <header>
         <div class=" d-flex flex-column gap-2 w-100">
-            <a href="/" style="width: 15%" class="mx-auto"><img class="w-100" src="./src/img/logo.jpg" alt="milu_logo"></a>
-            <nav>
-                <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center gap-2 gap-md-0 py-2 list-unstyled fw-bold">
-                    <li><a class="text-dark text-decoration-none" href="./index.html">INICIO</a></li>
-                    <li><a class="text-dark text-decoration-none" href="./paginas/historia.html">HISTORIA</a></li>
-                    
-                    <div class="btn-group dropdown">
-                        <button class="btn dropdown-toggle link fw-bold" type="button" id="dropdownMenuProd" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                            PRODUCTOS
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuProd">
-                            <li>
-                                <div class="btn-group dropdown">
-                                    <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                        BEBÉS
-                                    </button>
-                                    <ul class="dropdown-menu item-submenu" aria-labelledby="dropdownMenuButton2">
-                                        <li><a href="" class="dropdown-item ">BEBÉ</a></li>
-                                        <li><a href="" class="dropdown-item ">BEBA</a></li>
+            <a href="/" style="width: 30%" class="mx-auto">
+                <svg class="w-100" height="157" viewBox="0 0 221 157" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="221" height="157" fill="url(#pattern0)"/>
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_425_244" transform="translate(0 -0.000930721) scale(0.00198807 0.0027985)"/>
+                        </pattern>
+                        <image id="image0_425_244" width="503" height="358" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                </svg>
+            </a>
+<!-- 
+            <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center gap-2 gap-md-0 py-2 list-unstyled fw-bold" style="background-color: #FEEBCD;">
+                <li><a class="text-dark text-decoration-none" href="index.html">INICIO</a></li>
+                <li><a class="text-dark text-decoration-none" href="./paginas/historia.html">HISTORIA</a></li>
+                
+                <div class="btn-group dropdown">
+                    <button class="btn dropdown-toggle link fw-bold" type="button" id="dropdownMenuProd" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        PRODUCTOS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuProd">
+                        <li>
+                            <div class="btn-group dropdown">
+                                <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    BEBÉS
+                                </button>
+                                <ul class="dropdown-menu item-submenu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a href="" class="dropdown-item ">BEBÉ</a></li>
+                                    <li><a href="" class="dropdown-item ">BEBA</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group dropdown">
+                                <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                    NIÑOS
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a href="" class="dropdown-item ">NIÑO</a></li>
+                                    <li><a href="" class="dropdown-item ">NIÑA</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                  <li><a class="text-dark text-decoration-none" href="./paginas/contacto.html">CONTACTO</a></li>
+            </ul>
+        </div> -->
+        <nav>
+            <ul class="nav">
+                <li><a href="">INICIO</a></li>
+                <li><a href="">HISTORIA</a></li>
+                <li><a href="">PRODUCTOS</a>
+                    <ul>
+                        <li><a href="">BEBÉS</a>
+                            <ul>
+                                <li><a href="">BEBÉ</a>
+                                    <ul>
+                                        <li><a href="">BODY</a></li>
+                                        <li><a href="">RANITA</a></li>
+                                        <li><a href="">ENTERITOS</a></li>
+                                        <li><a href="">CAMPERA</a></li>
+                                        <li><a href="">PANTALÓN</a></li>
+                                        <li><a href="">BUZO</a></li>
+                                        <li><a href="">CALZA</a></li>
+                                        <li><a href="">CONJUNTOS</a></li>
+                                        <li><a href="">ACCESORIOS</a></li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn-group dropdown">
-                                    <button class="btn dropdown-toggle link btn-submenu" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                        NIÑOS
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                        <li><a href="" class="dropdown-item ">NIÑO</a></li>
-                                        <li><a href="" class="dropdown-item ">NIÑA</a></li>
+                                </li>
+                                <li><a href="">BEBA</a>
+                                    <ul>
+                                        <li><a href="">BODY</a></li>
+                                        <li><a href="">RANITA</a></li>
+                                        <li><a href="">ENTERITOS</a></li>
+                                        <li><a href="">CAMPERA</a></li>
+                                        <li><a href="">PANTALÓN</a></li>
+                                        <li><a href="">BUZO</a></li>
+                                        <li><a href="">CALZA</a></li>
+                                        <li><a href="">VESTIDO</a></li>
+                                        <li><a href="">REMERA</a></li>
+                                        <li><a href="">CONJUNTOS</a></li>
+                                        <li><a href="">ACCESORIOS</a></li>
                                     </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                      <li><a class="text-dark text-decoration-none" href="./paginas/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>      
-        </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">NIÑOS</a>
+                            <ul>
+                                <li><a href="">NIÑA</a>
+                                    <ul>
+                                        <li><a href="">REMERA</a></li>
+                                        <li><a href="">BUZO</a></li>
+                                        <li><a href="">PANTALÓN</a></li>
+                                        <li><a href="">CAMPERA</a></li>
+                                        <li><a href="">CONJUNTOS</a></li>
+                                        <li><a href="">CALZA</a></li>
+                                        <li><a href="">VESTIDO</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">NIÑO</a>
+                                    <ul>
+                                        <li><a href="">REMERA</a></li>
+                                        <li><a href="">BUZO</a></li>
+                                        <li><a href="">PANTALÓN</a></li>
+                                        <li><a href="">CAMPERA</a></li>
+                                        <li><a href="">CONJUNTOS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </nav>  
     </header>
+
+    <!-- <header>
+        <a href="/" style="width: 30%" class="mx-auto">
+            <svg class="w-100" height="157" viewBox="0 0 221 157" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="221" height="157" fill="url(#pattern0)"/>
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_425_244" transform="translate(0 -0.000930721) scale(0.00198807 0.0027985)"/>
+                    </pattern>
+                    <image id="image0_425_244" width="503" height="358" xlink:href="data:image/png;base64,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"/>
+                </defs>
+            </svg>
+        </a>
+        Menú de opciones
+        <nav>
+            <input type="checkbox" id="check">
+
+            <label for="check" class="checkbtn">
+
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="menu">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="pages/habitaciones.html">Habitaciones</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    
     <main class="container">
 
     </main>
@@ -72,9 +180,9 @@
             <div class="div2"> 
                 <h5 class="mb-4 mt-3">CONTACTANOS</h5>
                 <ul>
-                    <li><img src="./src/icons/clarity_phone-handset-solid.svg" alt="" height="30"> +54 343 461-9017</li>
-                    <li><img src="./src/icons/@.svg" alt="" height="30"> milu.pna@gmail.com</li>
-                    <li><img src="./src/icons/Ubicacion.svg" alt="" height="30"> Radio cadena 10fm 88.5, Angel Donado 1063, Paraná, Entre Ríos, Argentina</li>
+                    <li><img src="./src/icons/phone.svg" alt="" height="30"> +54 343 461-9017</li>
+                    <li><img src="./src/icons/mail.svg" alt="" height="30"> milu.pna@gmail.com</li>
+                    <li><img src="./src/icons/ubication.svg" alt="" height="30"> Radio cadena 10fm 88.5, Angel Donado 1063, Paraná, Entre Ríos, Argentina</li>
                     <!-- <li>Lunes a Viernes de 09:00 a 18:00 <br>
                         Sábado de 09:00 a 13:00</li> -->
                 </ul>
@@ -82,19 +190,15 @@
             <div class="div3"> 
                 <h5 class="mb-4 mt-3">REDES SOCIALES</h5>
                 <ul class="lista_ico">
-                    <li><a href="#"><img src="./src/icons/Indtagram con fondo.svg" alt="Instagram icon" height="50"></a></li>
-                    <li><a href="#"><img src="./src/icons/entypo-social_facebook-with-circle.svg" alt="Facebook icon" height="50"></a></li>
+                    <li><a href="#"><img src="./src/icons/ig2.svg" alt="Instagram icon" height="50"></a></li>
+                    <li><a href="#"><img src="./src/icons/fb2.svg" alt="Facebook icon" height="50"></a></li>
                 </ul>
                 <h6 class="mb-4 mt-3">¡RECIBI NOVEDADES!</h6>
                 <div class="novs">
-                    <input type="text"><a href=""><img src="./src/icons/enviar.svg" alt=""></a>
+                    <input type="text"><a href=""><img src="./src/icons/send.svg" alt=""></a>
                 </div>
             </div>
             </div>
-            <hr>
-        <div class="derechos">
-            <p>&copy; 2021 All Rights Reserved &reg; Milú.</p>
-        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
