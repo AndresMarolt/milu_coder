@@ -6,8 +6,6 @@ p, a, li, input, button, label {
     font-size: 12px !important;
 }
 
-
-
 .dropdown {
     position: relative;
 }
@@ -28,12 +26,12 @@ p, a, li, input, button, label {
     top: 85%;
 }
 
-.div-logo::before {
-    
-}
-
-.navegacion_mobile svg{
-    width:8%;
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 @media(min-width: 768px) {
@@ -50,6 +48,12 @@ p, a, li, input, button, label {
     }
 
     
+}
+
+@media(min-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media(min-width: 991px) {
@@ -72,13 +76,16 @@ p, a, li, input, button, label {
     .banner-img {
         height: 450px;
     }
+
+    .productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 /*--------------------------------------------*/
 
 nav{
-    background-color: #FEEBCD;
-    margin-bottom: 30px;
+    margin-bottom: 46px;
 }
 
 .parentContact{
