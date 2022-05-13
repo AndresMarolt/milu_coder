@@ -14,7 +14,6 @@ async function obtenerProductos() {
         return (categoria === localStorage.getItem('categoria') && tipo === localStorage.getItem('tipo'));
     });
 
-    console.log(publicaciones);
     imprimirProductos(publicaciones);
 }
 
@@ -25,8 +24,6 @@ function cargarLocalStorage() {
         enlace.addEventListener("click", (e) => {
             const tipo = e.target.innerText;
             const categoria = e.target.parentElement.parentElement.previousElementSibling.innerText;
-            console.log(tipo);
-            console.log(categoria);
             localStorage.setItem('tipo', tipo);
             localStorage.setItem('categoria', categoria);
         })
@@ -45,8 +42,8 @@ function imprimirProductos(publicaciones) {
     
             nuevoElemento.innerHTML = `
                 <img src=${imagen} alt="" class="w-100 img-producto">
+                <p class="fw-bold">$${precio}</p>
                 <p class="mb-0">${nombre}</p>
-                <p>$${precio}</p>
             `;
             
             divPadre.appendChild(nuevoElemento);

@@ -28,6 +28,8 @@ p, a, li, input, button, label {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
+    gap: 10px;
 }
 
 .redes-sociales_icon {
@@ -79,6 +81,7 @@ p, a, li, input, button, label {
     }
 
     .productos {
+        gap: 10px;
         grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -179,6 +182,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+    padding-left: 0;
 }
   
 .derechos {
@@ -344,7 +348,7 @@ li a:hover {
 
 /* ---------------------- SMARTPHONES ------------------------ */
 
-@media (min-width: 360px) and (max-width: 480px){
+@media (min-width: 0px) and (max-width: 480px){
     .parentContact{
         display: flex;
         flex-direction: column;
@@ -379,11 +383,11 @@ li a:hover {
     .div3{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-left: 20px;
     }
     .lista_ico{
         padding-right: 30px;
+        padding-left: 0;
     }
     .lista_ico img{
         height: 30px;
@@ -399,7 +403,7 @@ li a:hover {
 
 /* ---------------------- TABLETS & IPADS ---------------------- */
 
-@media (min-width: 768px) and (max-width: 990px){
+@media (min-width: 467px) and (max-width: 990px){
     .parentContact{
         display: flex;
         flex-direction: column;
