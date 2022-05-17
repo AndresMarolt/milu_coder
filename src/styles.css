@@ -86,6 +86,10 @@ p, a, li, input, button, label {
     }
 }
 
+.btn-prod-info {
+    background-color: #FEEBCD;
+}
+
 /*--------------------------------------------*/
 
 /* nav{
@@ -348,7 +352,7 @@ li a:hover {
 
 /* ---------------------- SMARTPHONES ------------------------ */
 
-@media (min-width: 0px) and (max-width: 480px){
+@media (max-width: 480px){
     .parentContact{
         display: flex;
         flex-direction: column;

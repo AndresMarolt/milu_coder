@@ -7,7 +7,9 @@
         "imagen": "../src/img/productos/bebes/beba/calza-beba.png",
         "precio": 1400,
         "stock": true,
-        "color": ["estampado", "azul"]
+        "color": "Azul",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "a"
     },{
         "id": 2,
         "categoria": "BEBA",
@@ -16,7 +18,9 @@
         "imagen": "../src/img/productos/bebes/beba/pantalon-beba.png",
         "precio": 1600,
         "stock": true,
-        "color": "rosa"
+        "color": "Rosa",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "b"
     },{
         "id": 3,
         "categoria": "BEBA",
@@ -25,7 +29,9 @@
         "imagen": "../src/img/productos/bebes/beba/conjunto.png",
         "precio": 2250,
         "stock": true,
-        "color": ["estampado", "rosa"]
+        "color": "Rosa",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "c"
     },{
         "id": 4,
         "categoria": "BEBÉ",
@@ -34,7 +40,9 @@
         "imagen": "../src/img/productos/bebes/bebe/pantalon-rustico.png",
         "precio": 1600,
         "stock": true,
-        "color": "gris"
+        "color": "Gris",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "d"
     },{
         "id": 5,
         "categoria": "BEBÉ",
@@ -43,16 +51,20 @@
         "imagen": "../src/img/productos/bebes/bebe/pantalon-frisa-azul-marino.png",
         "precio": 1650,
         "stock": true,
-        "color": "azul"
+        "color": "Azul",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "e"
     },{
         "id": 6,
         "categoria": "BEBÉ",
         "tipo": "PANTALÓN", 
-        "nombre": "Pantalón de frisa de algodón lavanda",
+        "nombre": "Pantalón de frisa de algodón color lavanda",
         "imagen": "../src/img/productos/bebes/bebe/pantalon-frisa-lavanda.png",
         "precio": 1650,
         "stock": true,
-        "color": "azul"
+        "color": "Azul",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "f"
     },{
         "id": 7,
         "categoria": "BEBÉ", 
@@ -61,7 +73,9 @@
         "imagen": "../src/img/productos/bebes/bebe/conjunto-body-estampado-ranita-lisa.png",
         "precio": 2250,
         "stock": true,
-        "color": "celeste"
+        "color": "Azul",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "g"
     },{
         "id": 8,
         "categoria": "BEBÉ",
@@ -70,7 +84,9 @@
         "imagen": "../src/img/productos/bebes/bebe/ranita-interlock-blanca.png",
         "precio": 850,
         "stock": true,
-        "color": "blanco"
+        "color": "Blanco",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "h"
     },{
         "id": 9,
         "categoria": "NIÑA",
@@ -79,7 +95,9 @@
         "imagen": "../src/img/productos/niños/niña/calza-nena-lycra-algodon-estampada.png",
         "precio": 2400,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "i"
     },{
         "id": 10,
         "categoria": "NIÑA",
@@ -88,7 +106,9 @@
         "imagen": "../src/img/productos/niños/niña/calza-nena-rustico-algodon-gris-topo.png",
         "precio": 2000,
         "stock": true,
-        "color": "negro"
+        "color": "Negro",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "j"
     },{
         "id": 11,
         "categoria": "BEBA",
@@ -97,7 +117,9 @@
         "imagen": "../src/img/productos/bebes/beba/conjunto-beba-rustico-elastizado-bordado.png",
         "precio": 3400,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "k"
     },{
         "id": 12,
         "categoria": "BEBÉ",
@@ -106,7 +128,9 @@
         "imagen": "../src/img/productos/bebes/bebe/conjunto-bee-rustico-elastizado-bordado.png",
         "precio": 3400,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "l"
     },{
         "id": 13,
         "categoria": "BEBA",
@@ -115,7 +139,9 @@
         "imagen": "../src/img/productos/bebes/beba/conjunto-beba-buzo-rustico-calza-lycra-turbante.png",
         "precio": 3900,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "m"
     },{
         "id": 14,
         "categoria": "BEBÉ",
@@ -124,7 +150,9 @@
         "imagen": "../src/img/productos/bebes/bebe/chaleco-bebe-frisa-tigre.png",
         "precio": 1500,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "n"
     },{
         "id": 15,
         "categoria": "BEBÉ",
@@ -133,7 +161,9 @@
         "imagen": "../src/img/productos/bebes/bebe/ajuar-nidito.png",
         "precio": 1500,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "o"
     },{
         "id": 16,
         "categoria": "BEBA",
@@ -142,7 +172,9 @@
         "imagen": "../src/img/productos/bebes/beba/set-toallon-babero-portachupete.png",
         "precio": 2600,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "p"
     },{
         "id": 17,
         "categoria": "BEBÉ",
@@ -151,7 +183,9 @@
         "imagen": "../src/img/productos/bebes/bebe/set-toallon-babero-babita-portachupete.png",
         "precio": 3000,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "r"
     },{
         "id": 18,
         "categoria": "BEBÉ",
@@ -160,7 +194,9 @@
         "imagen": "../src/img/productos/bebes/bebe/pack-ranitas-bebe.png",
         "precio": 2500,
         "stock": true,
-        "color": "azul"
+        "color": "Azul",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "s"
     },{
         "id": 19,
         "categoria": "BEBA",
@@ -169,7 +205,9 @@
         "imagen": "../src/img/productos/bebes/beba/pack-ranitas-beba.png",
         "precio": 2500,
         "stock": true,
-        "color": "rosa"
+        "color": "Rosa",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "t"
     },{
         "id": 20,
         "categoria": "BEBA",
@@ -178,7 +216,9 @@
         "imagen": "../src/img/productos/bebes/beba/nido-beba.png",
         "precio": 5000,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["0", "1", "2", "3"],
+        "modal": "u"
     },{
         "id": 21,
         "categoria": "NIÑO",
@@ -187,7 +227,9 @@
         "imagen": "../src/img/productos/niños/niño/conjunto-niño-buzo-pantalon-frisa-estampado-flor.png",
         "precio": 6300,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "v"
     },{
         "id": 22,
         "categoria": "NIÑO",
@@ -196,16 +238,9 @@
         "imagen": "../src/img/productos/niños/niño/conjunto-niño-buzo-pantalon-frisa-estampado-trex.png",
         "precio": 6300,
         "stock": true,
-        "color": "estampado"
-    },{
-        "id": 23,
-        "categoria": "NIÑO",
-        "tipo": "CONJUNTOS",
-        "nombre": "Conjunto buzo y pantalón de frisa con estampa única",
-        "imagen": "../src/img/productos/niños/niño/conjunto-niño-buzo-pantalon-frisa-estampado-trex.png",
-        "precio": 6300,
-        "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "w"
     },{
         "id": 24,
         "categoria": "NIÑO",
@@ -214,7 +249,9 @@
         "imagen": "../src/img/productos/niños/niño/conjunto-niño-buzo-pantalon-frisa-estampado-numero.png",
         "precio": 6300,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "x"
     },{
         "id": 25,
         "categoria": "NIÑA",
@@ -223,7 +260,9 @@
         "imagen": "../src/img/productos/niños/niña/remera-niña-estampa-corazon.png",
         "precio": 1900,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "y"
     },{
         "id": 26,
         "categoria": "NIÑA",
@@ -232,7 +271,9 @@
         "imagen": "../src/img/productos/niños/niña/remera-niña-estampa-frase.png",
         "precio": 1900,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "z"
     },{
         "id": 27,
         "categoria": "NIÑO",
@@ -241,7 +282,9 @@
         "imagen": "../src/img/productos/niños/niño/remera-jersey-algodon-estampa-music.png",
         "precio": 1900,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "aa"
     },{
         "id": 28,
         "categoria": "NIÑO",
@@ -250,6 +293,8 @@
         "imagen": "../src/img/productos/niños/niño/remera-jersey-algodon-estampa-skate.png",
         "precio": 1900,
         "stock": true,
-        "color": "estampado"
+        "color": "Estampado",
+        "talle": ["2", "4", "6", "8", "10"],
+        "modal": "ab"
     }
 ]
