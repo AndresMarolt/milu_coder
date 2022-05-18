@@ -1,42 +1,37 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
     obtenerProductos();
 });
+
 
 async function obtenerProductos() {
     cargarLocalStorage();
 
-    const resp = await fetch("../data.json");
+    const resp = await fetch('../data.json');
     const articulosArray = await resp.json();
-
-    const publicaciones = articulosArray.filter((art) => {
-        const {
-            categoria,
-            tipo
-        } = art;
-        return (
-            categoria === localStorage.getItem("categoria") &&
-            tipo === localStorage.getItem("tipo")
-        );
+    
+    const publicaciones = articulosArray.filter(art => {
+        const {categoria, tipo} = art;
+        return (categoria === localStorage.getItem('categoria') && tipo === localStorage.getItem('tipo'));
     });
 
-    console.log(publicaciones);
+    localStorage.setItem("productos", publicaciones);
+
     imprimirProductos(publicaciones);
+
+    ordenarProductos(publicaciones);
 }
 
 function cargarLocalStorage() {
-    const enlacesTipos = document.querySelectorAll(".enlace-producto");
+    const enlacesTipos = document.querySelectorAll('.enlace-producto');
 
     enlacesTipos.forEach((enlace) => {
         enlace.addEventListener("click", (e) => {
             const tipo = e.target.innerText;
-            const categoria =
-                e.target.parentElement.parentElement.previousElementSibling.innerText;
-            console.log(tipo);
-            console.log(categoria);
-            localStorage.setItem("tipo", tipo);
-            localStorage.setItem("categoria", categoria);
-        });
-    });
+            const categoria = e.target.parentElement.parentElement.previousElementSibling.innerText;
+            localStorage.setItem('tipo', tipo);
+            localStorage.setItem('categoria', categoria);
+        })
+    })
 }
 
 function imprimirProductos(publicaciones) {
@@ -49,21 +44,23 @@ function imprimirProductos(publicaciones) {
                 nombre,
                 precio,
                 imagen, 
-                talles
+                color,
+                modal
             } = publicacion;
 
             nuevoElemento.setAttribute("class", "producto");
 
-            nuevoElemento.innerHTML = `
-                <img src=${imagen} alt="" class="w-100 img-producto">
+            if(publicacion.categoria === 'BEBÉ' || 'BEBA'){
+                nuevoElemento.innerHTML = `
+                <img src=${imagen} alt="${nombre}" class="w-100 img-producto">
                 <p class="mb-0">${nombre}</p>
                 <p>$${precio}</p>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-prod-info" id="btnInfo" data-bs-toggle="modal" data-bs-target="#${modal}">
                 Ver info del producto
                 </button>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="${modal}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                     <div class="modal-header">
@@ -73,24 +70,23 @@ function imprimirProductos(publicaciones) {
                     <div class="modal-body">
                     <div class="parentProduct">
                         <div class="div-1"> 
-                            <img src=${imagen} alt="" height="250">
+                            <img src=${imagen} alt="${nombre}" height="250">
                         </div>
                         <div class="div-2"> 
-                            <h1>Nombre producto</h1>
+                            <h2>${nombre}</h2>
                             <h4>$${precio}</h4>
                         </div>
                         <div class="div-3"> 
                             <h4>TALLE:</h4>
                             <div class="buttons">
+                                <button>0</button>
+                                <button>1</button>
                                 <button>2</button>
-                                <button>4</button>
-                                <button>6</button>
-                                <button>8</button>
-                                <button>10</button>
+                                <button>3</button>
                             </div>
                         </div>
                         <div class="div-4"> 
-                            <h4>COLOR:</h4>
+                        <h4 style="text-transform: uppercase;">COLOR: ${color}</h4>
                         </div>
                         <div class="div-5"> 
                         <p>Si querés mas información sobre este producto hacé click <a href="https://wa.me/5491138940402" target="_blank">acá</a></p>
@@ -106,6 +102,61 @@ function imprimirProductos(publicaciones) {
                 </div>
                 
             `;
+            }else{
+                nuevoElemento.innerHTML = `
+                <img src=${imagen} alt="${nombre}" class="w-100 img-producto">
+                <p class="mb-0">${nombre}</p>
+                <p>$${precio}</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-prod-info" id="btnInfo" data-bs-toggle="modal" data-bs-target="#${modal}">
+                Ver info del producto
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="${modal}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">${nombre}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="parentProduct">
+                        <div class="div-1"> 
+                            <img src=${imagen} alt="${nombre}" height="250">
+                        </div>
+                        <div class="div-2"> 
+                            <h2>${nombre}</h2>
+                            <h4>$${precio}</h4>
+                        </div>
+                        <div class="div-3"> 
+                            <h4>TALLE:</h4>
+                            <div class="buttons">
+                                <button>2</button>
+                                <button>4</button>
+                                <button>6</button>
+                                <button>8</button>
+                                <button>10</button>
+                            </div>
+                        </div>
+                        <div class="div-4"> 
+                        <h4 style="text-transform: uppercase;">COLOR: ${color}</h4>
+                        </div>
+                        <div class="div-5"> 
+                        <p>Si querés mas información sobre este producto hacé click <a href="https://wa.me/5491138940402" target="_blank">acá</a></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            `;
+            }
+            
 
             divPadre.appendChild(nuevoElemento);
         });
@@ -119,4 +170,80 @@ function imprimirProductos(publicaciones) {
 
         divPadre.appendChild(nuevoElemento);
     }
+}
+
+
+function ordenarProductos(publicaciones) {
+    // =================================== TALLE ===========================================
+    let filtrosTalles = document.querySelectorAll(".filtro-talle");
+    let filtrosColores = document.querySelectorAll(".filtro-color");
+
+    filtrosTalles.forEach(filtro => {
+        filtro.addEventListener("click", (e) => {
+            filtrosTalles.forEach(filtro => {
+                if(filtro.id != e.target.id) {
+                    filtro.checked = false;
+                }
+            })
+            filtrosColores.forEach(filtro => {
+                if(filtro.id != e.target.id) {
+                    filtro.checked = false;
+                }
+            })
+            if(e.target.checked) {
+                filtrarTalles(e.target.id, publicaciones);
+            } else {
+                const divPadre = document.getElementById("prods");
+                divPadre.innerHTML = '';
+                imprimirProductos(publicaciones);
+            }
+        })
+    })
+
+    // =================================== COLOR ===========================================
+    filtrosColores.forEach(filtro => {
+        filtro.addEventListener("click", (e) => {
+            filtrosTalles.forEach(filtro => {
+                if(filtro.id != e.target.id) {
+                    filtro.checked = false;
+                }
+            })
+            filtrosColores.forEach(filtro => {
+                if(filtro.id != e.target.id) {
+                    filtro.checked = false;
+                }
+            })
+            if(e.target.checked) {
+                filtrarColores(e.target.id, publicaciones);
+            } else {
+                const divPadre = document.getElementById("prods");
+                divPadre.innerHTML = '';
+                imprimirProductos(publicaciones);
+            }
+        })
+    })
+}
+
+function filtrarTalles(talleBuscado, publicaciones) {
+
+    const resultados = publicaciones.filter(publicacion => {
+        return publicacion.talle.includes(talleBuscado);
+    })
+
+    const divPadre = document.getElementById("prods");
+    divPadre.innerHTML = '';
+
+    imprimirProductos(resultados);
+}
+
+function filtrarColores(colorBuscado, publicaciones) {
+
+    const resultados = publicaciones.filter( publicacion => {
+        return publicacion.color === colorBuscado;
+    })
+
+    const divPadre = document.getElementById("prods");
+    divPadre.innerHTML = '';
+
+    imprimirProductos(resultados);
 }

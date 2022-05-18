@@ -2,19 +2,12 @@ body {
     font-family: 'Calibri', sans-serif !important;
 }
 
-main{
-    margin-top: 100px;
-    margin-bottom: 300px;
-}
-
 p, a, li, input, button, label {
     font-size: 12px !important;
 }
 
 .logo {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
+    margin: 1rem 0;
 }
 
 .banner-img {
@@ -35,6 +28,8 @@ p, a, li, input, button, label {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
+    gap: 10px;
 }
 
 .redes-sociales_icon {
@@ -86,11 +81,29 @@ p, a, li, input, button, label {
     }
 
     .productos {
+        gap: 10px;
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
+.btn-prod-info {
+    background-color: #FEEBCD;
+}
+
 /*--------------------------------------------*/
+
+/* nav{
+    margin-bottom: 46px;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    height: 100%;
+}
+
+p, a, li {
+    font-size: 12px !important;
+}
 
 @media(min-width: 768px) {
     p, a, li {
@@ -102,6 +115,14 @@ p, a, li, input, button, label {
     p, a, li {
         font-size: 16px !important;
     }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.item-submenu {
+    position: absolute;
 }
 
 .parentContact{
@@ -165,12 +186,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-}
-  
-.derechos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 0;
 }
 
 h5, h6 {
@@ -372,17 +388,8 @@ li a:hover {
     background-color: #F9E0BA !important;
     color: #000;
 }
-
-.img-carousel{
-    width: 100%;
-    height: 500px;
-}
-
-.carousel-item{
-    position: static;
-}
-
  
+
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
 /* ---------------------- SMARTPHONES ------------------------ */
@@ -422,11 +429,11 @@ li a:hover {
     .div3{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-left: 20px;
     }
     .lista_ico{
         padding-right: 30px;
+        padding-left: 0;
     }
     .lista_ico img{
         height: 30px;
@@ -438,25 +445,11 @@ li a:hover {
     h5, h6{
         font-size: 15px;
     }
-    header {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-template-rows: 1fr;
-    }  
-    nav { 
-        grid-area: 1 / 1 / 2 / 2; 
-    }
-    .logo { 
-        grid-area: 1 / 2 / 2 / 3;
-    }
-    .logo img{
-        height: 80px;
-    } 
 }
 
 /* ---------------------- TABLETS & IPADS ---------------------- */
 
-@media (min-width: 768px) and (max-width: 990px){
+@media (min-width: 467px) and (max-width: 990px){
     .parentContact{
         display: flex;
         flex-direction: column;
@@ -478,24 +471,19 @@ li a:hover {
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
     }
-    header {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-template-rows: 1fr;
-    }  
-    nav { 
-        grid-area: 1 / 1 / 2 / 2; 
-    }
-    .logo { 
-        grid-area: 1 / 2 / 2 / 3;
-    }
-    .logo img{
-        height: 157px;
-    } 
+
 }
 
+@media (max-width: 952px) {
 
-@media (max-width: 990px) {
+
+    nav ul.menu li a {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 858px) {
     .checkbtn {
         display: block;
         margin-top: 7px;
@@ -533,7 +521,18 @@ li a:hover {
         opacity: 0.88;
         height: 50%;
     }
+    header{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    header svg{
+        height: 60%;
+        display: flex;
+    }
+
     nav{
         background-color: #fff;
+        order: -1;
     }
 }
