@@ -50,7 +50,7 @@ function imprimirProductos(publicaciones) {
 
             nuevoElemento.setAttribute("class", "producto");
 
-            if(publicacion.categoria === 'BEBÉ' || 'BEBA'){
+            if(publicacion.categoria === 'BEBÉ' && 'BEBA'){
                 nuevoElemento.innerHTML = `
                 <img src=${imagen} alt="${nombre}" class="w-100 img-producto">
                 <p class="mb-0">${nombre}</p>
@@ -89,7 +89,7 @@ function imprimirProductos(publicaciones) {
                         <h4 style="text-transform: uppercase;">COLOR: ${color}</h4>
                         </div>
                         <div class="div-5"> 
-                        <p>Si querés mas información sobre este producto hacé click <a href="https://wa.me/5491138940402" target="_blank">acá</a></p>
+                        <p>Si querés mas información sobre este producto hacé click <a href="https://wa.me/543434619017" target="_blank">acá</a></p>
                         </div>
                     </div>
                     </div>
@@ -142,7 +142,7 @@ function imprimirProductos(publicaciones) {
                         <h4 style="text-transform: uppercase;">COLOR: ${color}</h4>
                         </div>
                         <div class="div-5"> 
-                        <p>Si querés mas información sobre este producto hacé click <a href="https://wa.me/5491138940402" target="_blank">acá</a></p>
+                        <p>Si querés mas información sobre este producto hacé click <a href="https://wa.me/543434619017" target="_blank">acá</a></p>
                         </div>
                     </div>
                     </div>
